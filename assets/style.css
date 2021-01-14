@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?fam ly=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
+
+
+body {
+    margin: auto;
+    padding: 0;
+    width:100vw;
+    overflow-x:hidden;
+    background:url("../images/course.jpg");
+    background-size:100%;
+    background-attachment:fixed;
+
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+}
+
+/*--------Typography--*/
+
+.websiteName {
+   font-weight:200;
+}
+
+.main-title{
+    max-width: 600px;
+    margin: auto;
+}
+
+.title{
+    background-color: white;
+    font-size: 4rem;
+    font-family: "Nunito Sans", sans-serif;
+    text-transform: uppercase;
+    color:black;
+    width: 100%;
+    text-align:center;
+    position:relative;
+    top:XXXXXX;
+    background-color: white;
+}
+
+.main-title h1{
+    color: teal;
+}
+
+.subtitle {
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    display:block;
+    letter-spacing: 1rem;
+}
+
+.heading-title {
+    font-size: 5rem;
+    font-family: "Nunito Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+/*--------MAP TITLE GOES HERE--*/
+.text-section {
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    text-align: left, justify;
+}
+/*--------can left and justify be on the same line?--*/
+.link-section {
+    
+}
+
+.submit
+
+#successfully-submitted
+
+.footer-title {
+  font-size:3rem;  
+}
+
+.footer-text {
+    font-weight:400;
+}
+
+small{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+}
+
+/*--------Navigation Menu--*/
+li a.link-item{
+  font-family:"Nunito Sans", sans-serif;
+  columns: #e9e6e6;
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+a#navbarMenuLink {
+  font-family:"Nunito Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color:#033646;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  -webkit-text-orientation: upright;
+  text-orientation: upright;
+  margin-top: 1rem;
+  font-weight: 600;
+  padding:0;
+}
+
+/*--------Landing&Background--*/
+#landingPage{
+    min-width:100vw;
+    min-height:auto;
+    position: relative;
+}
+#landingPage img{
+    width:100%;
+    height:500px;
+}
+
+.overlay{
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.3);
+    z-index:1;
+    position:fixed;
+    margin:0;
+    padding:0;
+}
+
+#homePageText{
+display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position:relative;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+}
+
+a.subtitle:hover,
+a.subtitle:active {
+  text-decoration: none;
+  font-weight: 400;
+  color: #79b89f;
+  font-size: 2.5rem;
+}
+
+h1.websiteName {
+  border: 0.5rem solid green;
+}
+
+
+/*--------Footer--*/
+
+#footer {
+  padding-top: 0rem;
+  padding-bottom: 2rem;
+}
+
+.section-area{
+  text-decoration: none;
+  position: relative;
+  text-align: center;
+}
+
+.link-section{
+  text-decoration: none;
+}
+
+.link-section:hover,
+.link-section:active{
+  text-decoration: none;
+  color: #304e42;
+  font-weight:400;
+}
+
+a.icon{
+  color:#033646;
+  font-size:1.5rem;
+  padding:1rem;
+}
+
+a.icon:hover,
+a.icon:active,
+span.link-section:hover,
+span.link-section:active{
+  color:#79b89f;
+  text-decoration:none;
+  font-weight:600;
+}
+
+span.link-section{
+  padding-left:1rem;
+}
+
+.social{
+  padding-right:1rem;
+}
+
+.social:hover,
+.social:active{
+    color:#79b89f;
+    text-decoration:none;
+    }
+
+.social-links {
+  height:50px;  
+  margin-top:50px; 
+  margin-bottom:50px;
+  text-decoration:none;
+  display:inline-block;  
+  position: relative;
+}
+/*--------Draft--*/
