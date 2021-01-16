@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?fam ly=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
 
+/*--------General--*/
 html{
 scroll-behavior:smooth;
 }
@@ -17,13 +18,46 @@ body {
     background-size:100%;
     background-attachment:fixed;
 }
-
-
-/*---.container {
-    background-color: white;
-    padding: 20px;
+/*--------Home Section--*/
+.heading-title {
+    font-size: 5rem;
+    font-family: "Nunito Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 200;
 }
--*/
+
+ #landingPage{
+    height: 500px;
+ }
+
+ .websiteName {
+   font-weight:200;
+}
+
+#home{
+   margin-top:500px;
+}
+.main-title{
+    max-width: 600px;
+    margin: auto;
+    color: teal;
+}
+
+.title{
+    font-size: 4rem;
+    font-family: "Nunito Sans", sans-serif;
+    text-transform: uppercase;
+    width: 100%;
+    text-align:center;
+    position:relative;
+}
+
+h1.websiteName {
+  border: 0.5rem solid teal;
+  background-color: rgba(0,128,128,.5);
+}
+
+
 /*--------Nav--*/
 #mainNav{
     background-color: white;
@@ -50,48 +84,14 @@ body {
   padding-left:10px;
   padding-right:10px;
 }
-/*--------Typography--*/
 
-.websiteName {
-   font-weight:200;
-}
-
-.main-title{
-    max-width: 600px;
-    margin: auto;
-    color: teal;
-}
-
-.title{
-    font-size: 4rem;
-    font-family: "Nunito Sans", sans-serif;
-    text-transform: uppercase;
-    width: 100%;
-    text-align:center;
-    position:relative;
-}
-
-h1.websiteName {
-  border: 0.5rem solid teal;
-  background-color: rgba(0,128,128,.5);
-}
-
-/*--
-.subtitle {
-    font-size: 2rem;
-    font-family: "Montserrat", sans-serif;
-    display:block;
-    letter-spacing: 1rem;
-}
--*/
+/*--------About Us--*/
 .heading-title {
     font-size: 5rem;
     font-family: "Nunito Sans", sans-serif;
     text-transform: uppercase;
     font-weight: 200;
 }
-
-/*--------About Us--*/
 #recommended-section{
     margin-top: 0px;
 }
@@ -110,6 +110,12 @@ h1.websiteName {
 }
 
 /*--------Map Section--*/
+.heading-title {
+    font-size: 5rem;
+    font-family: "Nunito Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 200;
+}
 div#map {
     height:50rem;
     width: 60%;
@@ -124,8 +130,16 @@ div#map {
     margin-top: 90px;
 }
 #map {
-         height: 100%;
-         }
+    height: 100%;
+    margin-bottom: 50px;
+}
+
+/*-------------Carousel--*/
+
+.carousel-item img{
+width: 100%;
+height: 500px;
+}
 /*--------Contact Form--*/
 
 .text-section {
@@ -249,6 +263,7 @@ a.subtitle:active {
   position: relative;
   text-align: center;
   background-color: rgba(0,0,0,0.2);
+  margin-bottom: 50px;
 }
 
 .link-section{

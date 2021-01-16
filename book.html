@@ -16,8 +16,12 @@
       <!-- Core theme CSS (Bootstrap)-->
       <link rel="stylesheet" type="text/css" href="assets/style.css" />
       <title>Green Park Naivasha</title>
-      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHG34EYTGEo2Gx_37iUkUUnHCpGGpDyR4&libraries=places"></script>
       <style type="text/css"></style>
+        <script>
+         (function () {
+         		emailjs.init("AIzaSyD2dJ7nqcIKhdKtQnuAZQbPafiVZZoAN78");
+         	})();
+      </script>
     
    </head>
    <body>
@@ -38,11 +42,162 @@
             </div>
          </div>
       </nav>
+    <!-- Activity Price List --> 
+    <section class="section-area" id="home">
+        <h2 class="heading-title"> Activity and Pricing</h2>
+        <div class="container-fluid">
+            <div class="col-sm-12 col-lg-12 section-column">
+                <table class="table table-dark table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="font-size: 20px;">#</th>
+                            <th scope="col" style=" font-size: 20px;">Activity</th>
+                            <th scope="col" style=" font-size: 20px;">Duration (Hours)</th>
+                            <th scope="col" style=" font-size: 20px;">Cost ($)</th>
+                        </tr>
+                    </thead>
+
+                    <tbody style="font-size: 20px;">
+                         <tr>
+                           <th scope="row">1</th>
+                           <td>Horse Riding</td>
+                           <td>Otto</td>
+                           <td>@mdo</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">2</th>
+                           <td>Jacob</td>
+                           <td>Thornton</td>
+                           <td>@fat</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">3</th>
+                           <td colspan="1">Larry the Bird</td>
+                           <td>Otto</td>
+                           <td>@twitter</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">1</th>
+                           <td>Mark</td>
+                           <td>Otto</td>
+                           <td>@mdo</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">2</th>
+                           <td>Jacob</td>
+                           <td>Thornton</td>
+                           <td>@fat</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">3</th>
+                           <td>Larry </td>
+                           <td> the Bird</td>
+                           <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    <a href="#form"><i class="fa fa-chevron-down icon-scroll icon-last"></i></a>
+</section>
+
+    <!-- Contact Us --> 
+
+<section class="section-area" id="map-section">
+
+<div class="container-fluid" id="form">
+    <div class="row section-row">
+        <div class="col-sm-12 col-md-12 d-block section-column form-column">
+            <h2 class="heading-title">Contact Us</h2>
+            <form class="contact-form" name="contactForm" method="POST" action="?" onsubmit="return sendEmail(this);">
+                <div class="form-group">
+                    <label for="name">*Name</label>
+                    <input
+                           required
+                           type="text"
+                           name="fName"
+                           class="form-control name"
+                           id="name"
+                           aria-describedby="name"
+                           placeholder="Name"
+                           onchange="nameValidation(this)"/>
+                </div>
+                <div class="form-group">
+                        <label for="surname">* Surname</label>
+                        <input
+                           required
+                           type="text"
+                           name="lName"
+                           class="form-control name"
+                           id="surname"
+                           aria-describedby="surname"
+                           placeholder="Surname"
+                           onchange="surnameValidation(this)"/>
+                </div>
+                <div class="form-group">
+                    <label for="email">* E-mail</label>
+                        <input
+                           required
+                           type="email"
+                           name="email"
+                           class="form-control"
+                           id="email"
+                           aria-describedby="email"
+                           placeholder="name@email.com"
+                           onchange="emailValidation(this)"/>
+                     </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                        <input
+                           required
+                           type="tel"
+                           name="phone"
+                           class="form-control"
+                           id="phone"
+                           aria-describedby="phone"
+                           placeholder="Phone Number"
+                           onchange="phoneValidation(this)"/>
+                     </div>  
+                <div class="form-group">
+                    <label for="message">* Your dream holiday</label>
+                        <textarea
+                           required
+                           name="message"
+                           class="form-control"
+                           id="message"
+                           rows="10"
+                           placeholder="Write your message (at least 40 char)"
+                           onchange="messageValidation(this)"
+                           ></textarea>
+                     </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="from-check-input" type="checkbox" value="chef" id="chef" name="chef">
+                        <label class="form-check-label" for="chef"> Select this box if yout need a private chef.</label>
+                    </div>
+                </div>
+                <small>*Fields are required <br> We'll never share your details with anyone else.</small>
+
+                <button
+                    type="submit"
+                    class="btn btn-light btn-block submit"
+                    id="submit"
+                    value="Send">
+                Submit
+                </button>
+            </form>
+            <div>
+                <p id="successfully-submitted"> Thank you for submitting. We will take care of you as soon as possible.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
 
 
+</section>
 
-
-       <!-- Footer Section-->  
+    <!-- Footer Section -->  
     <section id="last" class="footer-area">
         <div class="footer-cards" id="last1">
             <div class="row" >
@@ -114,9 +269,9 @@
       <script src="assets/js/map.js"></script>
 
 
-    <!-- Script Api key from Google -->
+    <!-- Script Api key from Google  --> 
 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHG34EYTGEo2Gx_37iUkUUnHCpGGpDyR4&libraries=places&callback=initMap"></script>
-            
-    </body>
-</html>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHG34EYTGEo2Gx_37iUkUUnHCpGGpDyR4&libraries=places&callback=initMap1"></script>
+  
+</body>
+        </html> 
