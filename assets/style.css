@@ -109,15 +109,31 @@ h1.websiteName {
     margin-top: 90px;
 }
 
-/*--------MAP TITLE GOES HERE--*/
+/*--------Map Section--*/
+div#map {
+    height:50rem;
+    width: 60%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position:relative;
+    overflow:hidden;
+    object-position: center;
+}
+
+#map-section {
+    margin-top: 90px;
+}
+#map {
+         height: 100%;
+         }
+/*--------Contact Form--*/
+
 .text-section {
     font-size: 2rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 200;
     text-align: left, justify;
 }
-
-
 
 .submit
 
