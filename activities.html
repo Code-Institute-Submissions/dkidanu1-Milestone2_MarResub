@@ -20,9 +20,12 @@
         <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
       <!-- Javascript API keys function to get API key -->
   
+  
+
     
    </head>
    <body>
+    <div class="bg"></div>
      <!-- Nav Bar -->
       <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
          <div class="container">
@@ -40,15 +43,24 @@
             </div>
          </div>
       </nav>
-   <!-- Activities-->  
+  
+      <!-- Home section -->
+      <section id="home">
+            <div class="main-title">
+                <h1 class="websiteName title">Activities</h1>
+            </div>     
+          <!-- Navigation to Recomended Section-->   
+            <a href="#home"><i class="fa fa-chevron-down icon-scroll icon-last"></i></a>
+      </section>
 
-    <section class="section-area" id="home">
-         <h2 class="heading-title">Activities</h2>
+      <!-- Activities-->  
+
+    <section class="section-area" id="activities">
          <div class="container-fluid">
             <div class="row section-row recommended-row">
                <div class="col-sm-12 col-lg-12 section-column">
                   <div class="article-column">
-                     <p class="text-section"> 
+                     <p class="activitytext-section"> 
                         Green Park has been has been a activity and vacation spot since 2008. The proximity to Nairobi, makes it
                         a saught after vacation spot for families and solo travellers. The local surroundings are Lake Naivasha where
                         out guests go out fishing and on water safari to spot aquatic game. Close by we have ranges of mountains making for 
@@ -62,19 +74,22 @@
     <!-- Partner links for activities-->  
     <div class="col-sm-12 col-lg-12 section-column">
         <div class="row">
-            <div class="col-sm-12 col-md-4 fontsize">
-                <h1><a href="#">READ MORE</a></h1>
+            <div class="col-sm-12 col-md-4 read-more">
+                <h1><a href="#" target="_blank">READ MORE</a></h1>
             </div>
 
-            <div class="col-sm-12 col-md-4 fontsize">
-                <h1><a href="#">READ MORE</a></h1>
+            <div class="col-sm-12 col-md-4 read-more">
+                <h1><a href="#" target="_blank">READ MORE</a></h1>
             </div>
 
-            <div class="col-sm-12 col-md-4 fontsize">
-                <h1><a href="#">READ MORE</a></h1>
+            <div class="col-sm-12 col-md-4 read-more">
+                <h1><a href="#" target="_blank">READ MORE</a></h1>
             </div>
         </div>
     </div>
+
+    <!-- Navigation to Recomended Section-->   
+            <a href="#images"><i class="fa fa-chevron-down icon-scroll icon-last"></i></a>
 </section>      
 
  <!-- Adventure Carosel-->  
@@ -84,21 +99,25 @@
             <div class="row section-row">
                 <div class="col-sm-12 col-lg-2 section-column"></div>
                 <div class="col-sm-12 col-lg-8 section-column">
-                    <div id="carouselExampleIndicators" class="carosel slide" data-ride="carousel">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                         </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="./assets/images/golflesson.JPG" alt="First slide">
+                            <img class="d-block w-100" src="./assets/images/car.jpg" alt="First slide">
                         </div>
                         <div class="carousel-item">
                             <img class="d-block w-100" src="./assets/images/green.jpg" alt="Second slide">
                         </div>
                         <div class="carousel-item">
                             <img class="d-block w-100" src="./assets/images/road.JPG" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./assets/images/antelope.jpg" alt="Fourth slide">
                         </div>
                     </div>        
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -116,10 +135,22 @@
             </div>
     </section>
 
+
+
+
+
     <!-- Activity Locations Map-->  
     <section class="section-area" id="map-section">
         <h2 class="heading-title"> Discover Naivasha </h2>
             <div class="row section-row">
+                <div class="col-sm-12 col-lg-12 section-column">
+                  <div class="article-column">
+                     <p class="abouttext-section"> 
+                        Green Park has been has been an activity and vacation spot since 2008. The proximity to Nairobi, makes it
+                        ted in several major magazines and websites dedicated travel and adventure, namely: Gå Resa, Luxury Travel Guide and Trip Finder
+                        </p>
+                  </div>
+               </div>
                 <div class="col-sm-12 col-lg-2 section-column"></div>
                     <div id="map"></div>
             </div>
@@ -193,9 +224,6 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
       <!-- Third party plugin JS-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-         integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"> 
-    </script>
       <script src="assets/js/map.js"></script>
 
 
@@ -203,5 +231,5 @@
 
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHG34EYTGEo2Gx_37iUkUUnHCpGGpDyR4&libraries=places&callback=initMap1"></script>
   
-</body>
-        </html>
+    </body>
+    </html>
