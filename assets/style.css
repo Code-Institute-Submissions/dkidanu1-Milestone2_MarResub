@@ -18,7 +18,10 @@ font-size:10px;
   min-height: 50%;
   margin: auto;
   width: 100vw;
+  height: auto;
   overflow-x:hidden;
+  object-fit: cover;
+
 
 }
 .bg {
@@ -48,22 +51,22 @@ font-size:10px;
 
 /*--------Nav--*/
 #mainNav{
-    background-color: rgba(255,255,255,.3);
+    background-color: rgba(100,91,84,.3);
     font-family: "Nunito Sans", sans-serif;
 }
 
 .navbar-brand{
     font-size:2rem; 
-    color:#B7B7A4; 
+    color:#72836F; 
     border-radius:10px;
 }
 .navbar-light .navbar-brand {
-    color: #B7B7A4;
+    color: #72836F;
 }
 
 .navbar-nav li a{
     font-size:2rem; 
-    color:#B7B7A4; 
+    color:#72836F; 
     margin-left: 1px;
 }
 
@@ -91,7 +94,7 @@ font-size:10px;
 .main-title{
     max-width: 600px;
     margin: auto;
-    color: #B7B7A4;
+    color: #72836F;
     font-weight: 200;
 }
 
@@ -103,12 +106,23 @@ font-size:10px;
     text-align:center;
     position:relative;
     background-color: rgba(100,91,84,.3);
+    color: #D2D2C6;
 }
 
 h1.websiteName {
-  border: 0.5rem solid #B7B7A4;
+  border: 0.5rem solid #72836F;
 }
 
+.websitesubName{
+    font-size: 2rem;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    width: 100%;
+    text-align:center;
+    position:relative;
+    background-color: rgba(100,91,84,.3);
+}
 .section-area{
   text-decoration: none;
   position: relative;
@@ -123,7 +137,7 @@ h1.websiteName {
     font-family: "Nunito Sans", sans-serif;
     text-transform: uppercase;
     font-weight: 500;
-    color:#B7B7A4;
+    color:#72836F;
     margin-bottom: 50px;
 }
 
@@ -169,6 +183,27 @@ h1.websiteName {
     color:#D2D2C6;
     margin-bottom: 100px;
     margin-top: 200px;
+}
+
+#textslide {
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    text-align: left, justify;
+    color:#D2D2C6;
+    margin-bottom: 100px;
+    margin-top: 200px;
+}
+
+b, strong {
+    font-weight: bolder;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    text-align: left, justify;
+    color:#D2D2C6;
+    margin-bottom: 100px;
+    margin-top: 200px;
+
 }
 
 .section-column .read-more a{
@@ -237,7 +272,9 @@ div#map {
 #map {
     height: 100%;
     margin-bottom: 50px;
+    margin-left:300px
 }
+
 
 /*-------------Carousel--*/
 
@@ -250,8 +287,10 @@ height: 500px;
 
 .table{
 font-size: 20px;
-color: #B7B7A4;
+color: #72836F;
 }
+
+
 
 /*--------Contact Form--*/
 
@@ -465,8 +504,8 @@ a {
     color: #6B705C;
 }
 
-a .social-links:hover,
-.social-links:active{
+a .socials:hover,
+.socials:active{
     color:#B7B7A4;
     text-decoration:none;
 }
@@ -476,4 +515,20 @@ a .social-links:hover,
     text-decoration:none;
     text-align:center;
     position:relative;
+}
+
+
+/*--------Media Queries--*/
+@media (min-aspect-ratio: 16/9) {
+    #myVideo {
+        width:100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #myVideo { 
+        width:auto;
+        height: 100%;
+    }
 }
