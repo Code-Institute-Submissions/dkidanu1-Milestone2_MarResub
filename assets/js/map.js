@@ -20,27 +20,26 @@ function initMap() {
 
 function initMap1() {
   // The map, centered at Green Park
-  const map1 = new google.maps.Map(document.getElementById("map"), {
+    const map1 = new google.maps.Map(document.getElementById("map"), {
     zoom: 3,
     center: {lat: -0.7171778, lng: 36.3960062},
   });
    //Array of characters to label markers
-   const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
    
    // Markers on Activity Locations
-  const markers1 = locations.map((location,i)=> {
-    return new google.maps.Marker({
-      position: location,
-      label: labels[i % labels.length],
-    });
+    const markers1 = locations.map((location,i)=> {
+        return new google.maps.Marker({
+        position: location,
+        label: labels[i % labels.length],
+        });
   });
 
   // Market Clusterer
   new MarkerClusterer(map1, markers1,
     {
-    imagePath:
-      "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
-  });
+        imagePath:"https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+    });
 }
 const locations=[
     { lat: -0.7393086, lng: 36.3212225 }, //Crescent Island Game Sanctuary
