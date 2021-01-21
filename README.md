@@ -5,7 +5,7 @@
 ![Responsiveness](assets/readme/responsive.png)
 
 
-The live website can be found [Green Park](#).
+The live website can be found [Green Park](https://dkidanu1.github.io/Milestone2/).
 
 ___
 
@@ -298,6 +298,7 @@ The website was deployed using the following steps:
 •	Scroll down to "GitHub Pages" again;
 
 •	It will read "Your site is published at https://github.com/dkidanu1/Milestone2"
+
 Replicate the code: If you are looking to adapt of utilise this code on your own, follow the below instructions:
 
 •	Log in to GitHub;
