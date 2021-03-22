@@ -129,17 +129,17 @@
             <div class="row section-row">
                 <div class="col-sm-12 col-md-12 d-block section-column form-column">
                     <h2 class="heading-title">Contact Us</h2>
-                        <form class="contact-form" name="contactForm" onsubmit="return sendMail(this);">
+                        <form class="contact-form" name="contactForm" id="contact" onsubmit="return validate(this);">
                         
                             <div class="form-group">
                                 <label for="name">* Name</label>
                                 <input required type="text" name="fName" class="form-control name" id="name"
-                                aria-describedby="name" placeholder="Name"/>
+                                aria-describedby="name" placeholder="Name"  minlength="3" maxlength="15"/>
                              </div>
                             <div class="form-group">
                                 <label for="surname">* Surname</label>
                                 <input required type="text" name="lName" class="form-control name" id="surname"
-                                aria-describedby="surname" placeholder="Surname"/>
+                                aria-describedby="surname" placeholder="Surname"  minlength="3" maxlength="15"/>
                             </div>
                             <div class="form-group">
                                 <label for="email">* E-mail</label>
@@ -148,7 +148,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="phone">Phone</label>
-                                <input required type="tel" name="phone" class="form-control" id="phone" aria-describedby="phone"
+                                <input required type="number" name="phone" class="form-control" id="phone" aria-describedby="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                                 placeholder="Phone Number"/>
                             </div>  
                             <div class="form-group">
@@ -167,13 +167,7 @@
                     Submit
                 </button>
 
-            <script>
-                $(document).ready(function(){
-                    $(".close").click(function(){
-                        $("#myAlert").alert('close');
-                    });
-                });  
-            </script>
+            
                             </form>
                     </div>
                 </div>
@@ -218,17 +212,17 @@
         </div>
     </section>
   
-    <div class=" links container">
+     <div class=" links container">
         <div class="row">
             <div class="col-lg-12 col-sm-4 col-md-6">
                 <div class="socials"> 
-                    <a href="#!" ><i class="fab fa-twitter fa-6x"></i></a>
+                    <a href="https://twitter.com/kenyapics" target="_blank" ><i class="fab fa-twitter fa-6x"></i></a>
                 </div>
                 <div class="socials">
-                    <a href="#!"><i class="fab fa-facebook-f fa-6x"></i></a>
+                    <a href="https://www.facebook.com/KenyaTourism/" target="_blank"><i class="fab fa-facebook-f fa-6x"></i></a>
                 </div>
                 <div class="socials">
-                    <a href="#!"><i class="fab fa-instagram fa-6x"></i></a>
+                    <a href="https://www.instagram.com/magicalkenya/" target="_blank"><i class="fab fa-instagram fa-6x"></i></a>
                 </div>
             </div>
         </div>
@@ -245,9 +239,16 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-      
+      <script>
+                $(document).ready(function(){
+                    $(".close").click(function(){
+                        $("#myAlert").alert('close');
+                    });
+                });  
+            </script>
       <script src="assets/js/map.js"></script>
       <script src="assets/js/email.js"></script>
+      <script src="assets/js/validate.js"></script>
 
 
 <!-- Script Api key from Google  --> 
