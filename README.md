@@ -8,14 +8,22 @@
 The live website can be found [Green Park](https://dkidanu1.github.io/Milestone2/).
 
 ___
+## Index
 
+1. About the website
+2. User Experience Design
+3. Design
+4. Technology Used
+5. Testing
+6. Deployment
+7. Acknowledgements
+___
 
 ## About the website 
 
 This Green Park Website was created for the purpose of completing the second Milestone Project for the Code Institute's Full Stack Developer course. It was built using the knowledge gained from the HTML, CSS, User Centric Design, JavaScript Fundamentals and Interactive Frontend Development modules. The document below outlines the build and various technologies used. 
 
 ___
-
 
 ## User Experience Design
 
@@ -54,7 +62,7 @@ __Features planned__:
 - Carousel – To Showcase various experiences in a visual way.
 - Text Slide Show - To showcase JS learning and testimonials for Green Park.
 - Navigation – Javascript to support with the extra touch of smoothness on the scroll.
-- Contact us – Email JS to support and facilitate and questions and enquires users have.
+- Contact us – Email JS to support and facilitate and questions and enquires users have. Including Validation to ensure the right information is presented in the form.
 
 
 ### The Structure Plane
@@ -193,12 +201,55 @@ ___
 
 ### TESTING
 
-##### Functionality Testing
+#### Functionality Testing
 
-All the website links have been checked and they are all working. The form fields have been checked and fields are correctly validated and a message is sent and received accordingly.
+#### Interaction 
 
-A problem was found in the successfully submitted function, the bootstrap alert was not being activated appropriately, thus for this fix I opted to use JS function. Initially I had put the Script to call the successful message in the HMTL File, I found that it wasnt
-working for the purpose of what I was trying to achieve. By moving the code into the email.js file and adjusting the syntax with multiple tests using the console and clearing the cache several times I got the desired outcome.
+The website was tested and reviewed using the following steps: 
+
+Home Page:
+1. Check that background video loads and plays (Verified)
+2. Cheack screen size rendering for all sections of the page (Verified)
+> The footer section had a positioning issue on mobile and tablet views. This was fixed utilizing columns in bootstrap. 
+3. Check the map renders and provides the right location? (Verified)
+4. Check Social Media links work and open on a new tab(Verified)
+5. Check Navigation links work (Verified)
+
+Activities:
+1. Check background Image loads and displays (Verified)
+2. Cheack screen size rendering for all sections of the page (Verified)
+>The footer section had a positioning issue on mobile and tablet views. This was fixed utilizing columns in bootstrap.
+3. Check article links are working and open on a seperate tab (Verified)
+4. Check testimonial carousel moves and scrolls to different quotes (Verified)
+5. Check if image carousel functional (Verified)
+6. Check if map renders pins and zooms to reveal locations (Verified)
+7. Check Social Media links work and open on a new tab(Verified)
+8. Check Navigation links work (Verified)
+
+Book now:
+1. Check background Image loads and displays (Verified)
+2. Cheack screen size rendering for all sections of the page (Verified)
+>The footer section had a positioning issue on mobile and tablet views. This was fixed utilizing columns in bootstrap.
+3. Check if table of pricing renders (Verified)
+4. Check Social Media links work and open on a new tab(Verified)
+5. Check Navigation links work (Verified)
+
+Contact form:
+1. Check if the form submits with numbers in name and surname section
+> Form does not submit and renders an alert message 
+2. Check if form submits with numbers in surname section
+> Form does not submit and renders an alert message 
+3. Check if form submits with no email but all other fields correct
+> Form does not submit and message pops up within the form to indicate email structure needed
+4. Check if form submits name, surname and email correct but no message
+> Form does not submit and renders an alert message 
+5. Submit form with all information in fields correct but not checking the check box
+>Form does not submit and renders an alert message to verify humanity
+
+The form fields have been checked and fields are correctly validated and a message is sent and received accordingly.
+
+#### Issues Found
+A problem was found in the successfully submitted function, the bootstrap alert was not being activated appropriately, thus for this fix I opted to use JS function. Initially I had put the Script to call the successful message in the HMTL File, I found that it wasnt working for the purpose of what I was trying to achieve. By moving the code into the email.js file and adjusting the syntax with multiple tests using the console and clearing the cache several times I got the desired outcome.
 
 Which was a Fixed submitted message, and the form returning a message on the website, so the user knows that everything went well. Another important element that needed alot of testing was the clearing of the form elements. 
 ![Successful submission](assets/readme/successful.png)
@@ -209,12 +260,29 @@ I did not have much luck with that so later opted to use the ESC option to pause
 After identifying the issue, I was able to get the functionality working for the contact us form. 
 ![Debugger running](assets/readme/debugger.png)
 
+When developing the validation section a number of issues arose in development. The aim of this section was to ensure the form validated each field before submitting the form. The first issue that arose was a referencing issue in the form. To fix this a definition was added for the specific element ![Reference Issue ](assets/images/reference.png)
 
-Moreover, there were  issues with spacing and mobile first design. This was particularly for the footer sections and the Google Maps.  To solve this issue, I utilized bootstrap and Google maps documentation as well as the “Inspect” tool. It was a process with small iterations over time.  I utilized the fiddle tool to see how various code changes would react: 
+Furthermore there was an issue with elements that were not defined. This was for the text element that I had initially included in the validation function, I later removed this function in place for styling ![Defined Element ](assets/images/defined.png)
+
+Moreover, there were issues with spacing and mobile first design. This was particularly for the footer sections and the Google Maps. To solve this issue, I utilized bootstrap and Google maps documentation as well as the “Inspect” tool. It was a process with small iterations over time.  I utilized the fiddle tool to see how various code changes would react: 
 [JS Fiddle](https://jsfiddle.net/api/post/library/pure/) and [Google Documentation](https://developers.google.com/maps/documentation/javascript/marker-clustering?hl=en#maps_marker_clustering-typescript)
 ![Spacing](assets/readme/spacing.png)
 
-Ultimately I managed to get the sizing and spacing the way I wanted it to be, but going forward this is something I will be more contagious of from the beginning of the build to prevent and such issues from arising. 
+#### Responsiveness
+To test the responsiveness of the site I managed to get the sizing and spacing the way I wanted it to be, but going forward this is something I will be more contagious of from the beginning of the build to prevent and such issues from arising. 
+
+In this test the website was tested to all default device sizes provided by chrome dev tools.
+
+360 x 640 Galaxy S5
+375 x 667 iPhone 6/7/8
+375 x 812 iPhone X
+411 x 731 Pixel 2
+411 x 823 Pixel 2 XL
+414 x 736 iPhone 6/7/8 Plus
+768 x 1024 iPad
+1024 x 1366 iPad Pro
+
+#### Code Validation
 
 HTML and CSS were validated using the [HTML Validator](https://validator.w3.org/nu/#textarea) and [CSS Validator](https://jigsaw.w3.org/css-validator/). For JS I utilized the console.log as I was coding elements, additionally validated using [JS Hint](https://jshint.com/)
 

@@ -475,10 +475,10 @@ a.subtitle:active {
     text-align: center;
 }
 a {
-    color: #D2D2C6;
+    color: #6B705C;
 }
 a:hover {
-    color:#6B705C;
+    color:#D2D2C6;
     text-decoration: underline;
 }
 .end-copy{
