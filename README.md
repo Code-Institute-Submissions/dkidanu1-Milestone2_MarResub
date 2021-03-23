@@ -281,11 +281,44 @@ In this test the website was tested to all default device sizes provided by chro
 414 x 736 iPhone 6/7/8 Plus
 768 x 1024 iPad
 1024 x 1366 iPad Pro
+> Issues were found in positioning for the footer in Ipad sizing. This was rectified with bootstrap colums.
 
 #### Code Validation
 
-HTML and CSS were validated using the [HTML Validator](https://validator.w3.org/nu/#textarea) and [CSS Validator](https://jigsaw.w3.org/css-validator/). For JS I utilized the console.log as I was coding elements, additionally validated using [JS Hint](https://jshint.com/)
+To validate the code validation software was utilized:
 
+HTML was validated using the [HTML Validator](https://validator.w3.org/nu/#textarea) 
+
+- index.html
+> - The type attribute for the style element is not needed and should be omitted.(Fixed)
+- book.html
+> - The type attribute for the style element is not needed and should be omitted. (Fixed)
+> - The type attribute is unnecessary for JavaScript resources. (Remains as a warning )
+> - Attribute pattern is only allowed when the input type is email, password, search, tel, text, or url. (Fixed)
+> - Error on Map Found ![Error](assets/images/error.png)
+- activities.html
+> - The type attribute for the style element is not needed and should be omitted. (Fixed)
+
+CSS was validated using the [CSS Validator](https://jigsaw.w3.org/css-validator/). 
+
+- style.css
+> The below errors were identified and fixed during testing. 
+![CSS](assets/images/css.png)
+
+JS was validated using the console.log as I was coding elements, additionally validated using [JS Hint](https://jshint.com/)
+
+- email.js
+> Warninigs were identified and will continue to be monitored:
+> - Assignment or function call and instead saw an expression.
+- map.js
+> Warninigs were identified and will continue to be monitored:
+> - const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions.
+- slideshow.js
+> Warninigs were identified and will continue to be monitored:
+> - const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions.
+- validate.js
+> - Missing Semi colons identified
+> - Problem/ TypeError: Cannot read property 'requestContent' of undefined
 
 
 ##### Usability Testing 

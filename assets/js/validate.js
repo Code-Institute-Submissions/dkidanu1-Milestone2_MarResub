@@ -1,14 +1,13 @@
 function validate(form){
-console.log(form)
 namevalid = allLetter("name");
 surnamevalid = allLetter("surname");
 checkBox = myCheck("verify");
 if (namevalid && surnamevalid && checkBox) {
 sendMail(form);
-return false
+return false;
 }
-return false
-};
+return false;
+}
 
 function allLetter(key){
    var letters = document.getElementById(key);
@@ -17,7 +16,7 @@ function allLetter(key){
        return true;
         }
     else {
-        letters.classList.add("invalid") 
+        letters.classList.add("invalid");
      alert('Please input alphabet characters only');
      return false;
      }
