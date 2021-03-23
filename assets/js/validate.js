@@ -2,7 +2,8 @@ function validate(form){
 console.log(form)
 namevalid = allLetter("name");
 surnamevalid = allLetter("surname");
-if (namevalid && surnamevalid) {
+checkBox = myCheck("verify");
+if (namevalid && surnamevalid && checkBox) {
 sendMail(form);
 return false
 }
@@ -20,4 +21,14 @@ function allLetter(key){
      alert('Please input alphabet characters only');
      return false;
      }
+    }
+
+    function myCheck (){
+        var checkBox = document.getElementById("verify");
+        if (checkBox.checked == false){
+        alert('You need to Verify Humanity');
+        return false;
+        } else { 
+        return true;
+        }
     }
