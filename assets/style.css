@@ -48,7 +48,7 @@ font-size:10px;
 
 /*--------Nav--*/
 #mainNav{
-    background-color: rgba(100,91,84,.5);
+    background-color: rgba(100,91,84,.7);
     font-family: "Nunito Sans", sans-serif;
 }
 .navbar-brand{
@@ -100,7 +100,7 @@ font-size:10px;
     width: 100%;
     text-align:center;
     position:relative;
-    background-color: rgba(100,91,84,.5);
+    background-color: rgba(100,91,84,.7);
     color: #D2D2C6;
 }
 h1.websiteName {
@@ -115,14 +115,14 @@ h1.websiteName {
     width: 100%;
     text-align:center;
     position:relative;
-    background-color: rgba(100,91,84,.5);
+    background-color: rgba(100,91,84,.7);
 }
 .section-area{
   text-decoration: none;
   position: relative;
   text-align: center;
   
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.7);
   margin-bottom: 90px;
 }
 
@@ -139,7 +139,7 @@ h1.websiteName {
   text-decoration: none;
   position: relative;
   text-align: center;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.7);
   margin-bottom: 50px;
 }
 .abouttext-section {
@@ -407,7 +407,7 @@ a#navbarMenuLink {
 .overlay{
     width:100%;
     height:100%;
-    background-color: rgba(85,84,80,.5);
+    background-color: rgba(85,84,80,.7);
     z-index:1;
     position:fixed;
     margin:0;
@@ -453,7 +453,7 @@ a.subtitle:active {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: rgba(100,91,84,.5);
+  background-color: rgba(100,91,84,.7);
   border-radius: .25rem;
   color:#D2D2C6;
   font-family: "Nunito Sans", sans-serif;
@@ -487,7 +487,7 @@ a:hover {
     text-decoration:none;
     text-align:center;
     position:relative;
-    background-color:rgba(100,91,84,.5);
+    background-color:rgba(100,91,84,.7);
     padding-bottom: 10px;
 }
 .grey {

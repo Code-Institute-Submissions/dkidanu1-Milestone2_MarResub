@@ -260,9 +260,9 @@ I did not have much luck with that so later opted to use the ESC option to pause
 After identifying the issue, I was able to get the functionality working for the contact us form. 
 ![Debugger running](assets/readme/debugger.png)
 
-When developing the validation section a number of issues arose in development. The aim of this section was to ensure the form validated each field before submitting the form. The first issue that arose was a referencing issue in the form. To fix this a definition was added for the specific element ![Reference Issue ](assets/images/reference.png)
+When developing the validation section a number of issues arose in development. The aim of this section was to ensure the form validated each field before submitting the form. The first issue that arose was a referencing issue in the form. To fix this a definition was added for the specific element ![Reference Issue ](assets/readme/reference.png)
 
-Furthermore there was an issue with elements that were not defined. This was for the text element that I had initially included in the validation function, I later removed this function in place for styling ![Defined Element ](assets/images/defined.png)
+Furthermore there was an issue with elements that were not defined. This was for the text element that I had initially included in the validation function, I later removed this function in place for styling ![Defined Element ](assets/readme/defined.png)
 
 Moreover, there were issues with spacing and mobile first design. This was particularly for the footer sections and the Google Maps. To solve this issue, I utilized bootstrap and Google maps documentation as well as the “Inspect” tool. It was a process with small iterations over time.  I utilized the fiddle tool to see how various code changes would react: 
 [JS Fiddle](https://jsfiddle.net/api/post/library/pure/) and [Google Documentation](https://developers.google.com/maps/documentation/javascript/marker-clustering?hl=en#maps_marker_clustering-typescript)
@@ -291,11 +291,12 @@ HTML was validated using the [HTML Validator](https://validator.w3.org/nu/#texta
 
 - index.html
 > - The type attribute for the style element is not needed and should be omitted.(Fixed)
+> - Violations identified scroll-blocking, touchmove, and touchstart event. These are being monitored during site performance. 
 - book.html
 > - The type attribute for the style element is not needed and should be omitted. (Fixed)
 > - The type attribute is unnecessary for JavaScript resources. (Remains as a warning )
-> - Attribute pattern is only allowed when the input type is email, password, search, tel, text, or url. (Fixed)
-> - Error on Map Found ![Error](assets/images/error.png)
+> - Attribute pattern is only allowed when the input type is email, password, search, tel, text, or url. At this point a decision was made to keep the type as number, this provides the best functionality for the form and opposed to type tel which does not complete the validation as needed. (Remained as is)
+> - Error on Map Found (Fixed) ![Error](assets/readme/error1.png)
 - activities.html
 > - The type attribute for the style element is not needed and should be omitted. (Fixed)
 
@@ -303,7 +304,7 @@ CSS was validated using the [CSS Validator](https://jigsaw.w3.org/css-validator/
 
 - style.css
 > The below errors were identified and fixed during testing. 
-![CSS](assets/images/css.png)
+![CSS](assets/readme/css.png)
 
 JS was validated using the console.log as I was coding elements, additionally validated using [JS Hint](https://jshint.com/)
 
@@ -409,6 +410,17 @@ Replicate the code: If you are looking to adapt of utilise this code on your own
 •	Top-right of the page, click on a button called "Fork";
 
 •	This will will fork the code to your GitHub.
+
+#### Local Clone
+To make a local clone of the site, just follow these steps:
+
+- Log in to your GitHub;
+- Under your repository section, select the repo that you need;
+- You will find a green button with the name "Code". Click on it;
+- On the dropdown selection, you will find a link to clone the code with HHTPS;
+- Now open Git pod;
+- Open the directory where you want to work on the cloned code;
+- Type git clone followed by the link you have previously copied.
 
 #### Gitpod Reminders
 For this project the Code Institute student template for Gitpod was utilized. It has preinstalled all of the tools needed to get started.
